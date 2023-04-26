@@ -1,0 +1,65 @@
+.pokemon__list__card {
+  width: 40%;
+  padding-bottom: 1%;
+
+  @media only screen and (max-width: 768px) {
+    width: 80%;
+    order: 2;
+  }
+  @media only screen and (min-width: 768px)and (max-width: 1200px) {
+    width: 60%;
+  }
+
+  h1 {
+    margin-top: 5%;
+    font-size: 1.75em;
+    text-align: center;
+    vertical-align: center;
+
+  }
+
+  .pokemon__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    .custom-loader {
+      margin: 5%;
+
+      width: 4rem;
+      height: 4rem;
+
+      border-radius: 50%;
+
+      grid-column: 1/-1;
+      justify-self: center;
+
+      background:
+              radial-gradient(farthest-side, #fef660 94%, #0000) top/9px 9px no-repeat,
+              conic-gradient(#0000 30%, #fef660);
+      -webkit-mask: (radial-gradient(farthest-side, #0000 calc(100% - 9px), #000 0));
+      animation: s3 1s infinite linear;
+    }
+
+    @keyframes s3 {
+      100% {
+        transform: rotate(1turn)
+      }
+    }
+    @media only screen and (min-width: 321px) and (max-width: 768px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    @media only screen and (max-width: 320px) {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+
+  .list__actions {
+    text-align: center;
+    margin-bottom: 2%;
+    button{
+      width: 90%;
+    }
+  }
+
+}
+
