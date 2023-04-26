@@ -5,6 +5,6 @@ Link: https://pokedex-73a59.web.app
 
  
 Commands for project (in project directory terminal): <br>
-    Install dependencies:npm install <br>
+    Install dependencies: npm install <br>
 Run: npm run dev<br>
     Build: npm run build
